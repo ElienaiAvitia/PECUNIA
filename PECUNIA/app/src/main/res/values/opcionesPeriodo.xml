@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones_arrayPeriodo">
+        <item>Semanal</item>
+        <item>Quincenal</item>
+        <item>Mensual</item>
+        <!-- Agrega más opciones según sea necesario -->
+    </string-array>
+</resources>

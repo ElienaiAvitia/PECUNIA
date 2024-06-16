@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="63dp"
+        app:srcCompat="@drawable/red_de_dinero" />
+
+    <TextView
+        android:id="@+id/txtNusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="71dp"
+        android:baselineAligned="false"
+        android:text="Distribución"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtIngresoMensual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="135dp"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="47dp"
+        android:text="Ingreso mensual:" />
+
+    <TextView
+        android:id="@+id/txtAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="165dp"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="47dp"
+        android:text="Agregar" />
+
+    <TextView
+        android:id="@+id/txtEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="165dp"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="47dp"
+        android:text="Eliminar" />
+
+
+    <ScrollView
+        android:id="@+id/scView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="71dp">
+
+        <LinearLayout
+            android:id="@+id/lyBlanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="71dp"
+            android:background="@drawable/white_background"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvDistribucion"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/ibAgregar"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="160dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bonitomas_photoroom_png_photoroom" />
+
+    <ImageButton
+        android:id="@+id/ibEliminar"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="234dp"
+        android:layout_marginTop="159dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bonitomenos_photoroom_png_photoroom" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtFolioE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scView"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="escribe el folio a eliminar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scView" />
+
+
+</RelativeLayout>

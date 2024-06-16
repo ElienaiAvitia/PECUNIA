@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="461dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:baselineAligned="false"
+            android:text="Tipo"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:entries="@array/opciones_array" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:baselineAligned="false"
+            android:text="Cantidad"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txtCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="22dp"
+            android:backgroundTint="@color/purple2"
+            android:textColor="#9C27B0"
+            android:textColorHint="@color/Purple" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:baselineAligned="false"
+            android:text="Concepto"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtConcepto"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="22dp"
+            android:backgroundTint="@color/purple2"
+            android:textColor="#9C27B0"
+            android:textColorHint="@color/Purple" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/boton"
+            android:shadowColor="#B92DD1"
+            android:text="Guardar"
+            android:textColorHighlight="#673AB7"
+            app:backgroundTint="@null"
+            app:strokeColor="#D919FA" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="151dp"
+        android:baselineAligned="false"
+        android:text="Variables"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/transferencia" />
+
+
+</RelativeLayout>

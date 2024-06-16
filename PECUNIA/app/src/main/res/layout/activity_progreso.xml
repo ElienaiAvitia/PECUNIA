@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <ImageView
+        android:id="@+id/imProgreso"
+        android:layout_width="68dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/stats"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <TextView
+        android:id="@+id/txtNusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="124dp"
+        android:baselineAligned="false"
+        android:text="Progreso"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/txtAgregarP"
+        android:layout_width="82dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Añadir"
+
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="160dp"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="144dp"
+        tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="71dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/lyBlanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="71dp"
+            android:background="@drawable/white_background"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvProgreso"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageButton
+        android:id="@+id/ibAgregarP"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#03FAF9F9"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bonitomas_photoroom_png_photoroom"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="144dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="120dp"/>
+
+</RelativeLayout>

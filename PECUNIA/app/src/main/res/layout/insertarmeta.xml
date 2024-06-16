@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lyBlanco"
+        android:layout_width="314dp"
+        android:layout_height="496dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="137dp"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/etMonto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/boton"
+            android:shadowColor="#B92DD1"
+            android:text="Aceptar"
+            android:textColorHighlight="#673AB7"
+            app:backgroundTint="@null"
+            app:strokeColor="#D919FA"
+            />
+
+        <TextView
+            android:id="@+id/txtTOTAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:layout_marginTop="-120dp"
+            android:textSize="36dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="428dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/flag"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="68dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtNusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="84dp"
+        android:baselineAligned="false"
+        android:text="Nombre Meta"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <CheckBox
+        android:id="@+id/cbDepositar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Depositar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        tools:layout_editor_absoluteX="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cbRetirar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Retirar"
+        app:layout_constraintStart_toEndOf="@+id/cbDepositar"
+        tools:layout_editor_absoluteY="157dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

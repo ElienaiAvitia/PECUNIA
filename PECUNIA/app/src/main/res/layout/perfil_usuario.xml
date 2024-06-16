@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtNusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="80dp"
+        android:baselineAligned="false"
+        android:text="Nombre usuario"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="292dp"
+        android:layout_height="459dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="258dp"
+            android:layout_height="401dp"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/txtNameU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="48dp"
+                android:hint="Eliminar usuario"
+                app:layout_constraintStart_toEndOf="@+id/ibEliminarUsuario"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPassU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="120dp"
+                android:hint="Modificar contraseña"
+                app:layout_constraintStart_toEndOf="@+id/ibModificarContrasena"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibIngreso"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="168dp"
+                android:layout_marginBottom="16dp"
+                android:background="#CC5DE8"
+                android:contentDescription="Botón de Ingresos"
+                android:src="@mipmap/flechitai"
+                app:layout_constraintBottom_toTopOf="@+id/pas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck,UnknownId" />
+
+            <ImageButton
+                android:id="@+id/ibEgreso"
+                android:contentDescription="Botón de Egresos"
+                android:src="@mipmap/flechitad"
+                android:layout_width="67dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="20dp"
+                android:background="#CC5DE8"
+                app:layout_constraintBottom_toTopOf="@+id/btnLogOut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.98"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:hint="Egresos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="276dp"
+                app:layout_constraintStart_toEndOf="@+id/ibEgreso"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtIngreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="188dp"
+                android:hint="Ingresos"
+                app:layout_constraintStart_toEndOf="@+id/ibIngreso"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="146dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="336dp"
+                android:background="@drawable/boton"
+                android:text="Cerrar Sesión"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibEliminarUsuario"
+                android:layout_width="67dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="24dp"
+                android:background="#CC5DE8"
+                android:src="@mipmap/personita"
+                app:layout_constraintBottom_toTopOf="@+id/ibModificarContrasena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/ibModificarContrasena"
+                android:layout_width="67dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="88dp"
+                android:background="#CC5DE8"
+                android:src="@mipmap/candadito"
+                app:layout_constraintBottom_toTopOf="@+id/ibIngreso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="156dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="118dp"
+        android:src="@mipmap/perfil_usuario_foreground" />
+
+</RelativeLayout>
